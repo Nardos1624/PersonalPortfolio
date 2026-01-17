@@ -38,7 +38,7 @@ const MyStory = () => {
     <div className="absolute -inset-4 rounded-3xl border-2 border-primary/30 animate-glow-pulse" />
     
     {/* Image Container */}
-    <div className="w-853 h-460 md:w-953 md:h-[530px] rounded-3xl overflow-hidden glass glow animate-float relative shadow-2xl">
+    <div className="w-[853] h-[460] md:w-[953] md:h-[530px] rounded-3xl overflow-hidden glass glow animate-float relative shadow-2xl">
       <img 
         src="/images/img.jpg" 
         alt="Nardos Walelegn" 
