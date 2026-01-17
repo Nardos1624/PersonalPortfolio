@@ -40,7 +40,7 @@ const MyStory = () => {
     {/* Image Container */}
     <div className="w-853 h-460 md:w-953 md:h-[530px] rounded-3xl overflow-hidden glass glow animate-float relative shadow-2xl">
       <img 
-        src="/img.jpg" 
+        src="/images/img.jpg" 
         alt="Nardos Walelegn" 
         className="w-full h-full object-cover antialiased brightness-[1.05] contrast-[1.05]" 
         style={{ imageRendering: 'auto' }}
