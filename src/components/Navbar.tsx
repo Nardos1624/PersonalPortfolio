@@ -5,7 +5,7 @@ const navLinks = [
   { label: "My Story", href: "#mystory" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
-  { label: "Resume", href: "/resume.pdf" }, 
+{ label: "Resume", href: "/Nardos-Walelegn-Resume.pdf" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -51,22 +51,17 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target={link.label === "Resume" ? "_blank" : undefined}
-              rel={link.label === "Resume" ? "noopener noreferrer" : undefined}
-              className={`font-medium transition-colors flex items-center gap-1.5
-    ${
-      activeSection === link.href
-        ? "text-primary"
-        : "text-muted-foreground hover:text-primary"
-    }
-  `}
-            >
-              {link.label === "Resume" && <FileText className="w-4 h-4" />}
-              {link.label}
-            </a>
+         <a
+  key={link.label}
+  href={link.href}
+  target="_blank"
+  rel="noopener noreferrer"
+  // This forces the browser to treat it as a file resource
+  download={link.label === "Resume" ? "Nardos_Walelegn_Resume.pdf" : undefined}
+  className="..."
+>
+  {link.label}
+</a>
           ))}
 
           {/* 2. Improved Hire Me Button */}
